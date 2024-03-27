@@ -5,6 +5,8 @@
 需要在本地安装 Ollama 和 Docker Desktop。使用 Docker Desktop 来运行
 Redis。参考 `docker-compose.yaml` 文件。
 
+默认使用通义千问 0.5b 模型（`qwen:0.5b`），可以通过配置文件来修改。
+
 使用 `dev` profile 来运行 Spring。
 
 访问 [Swagger UI](http://localhost:8080/swagger-ui/index.html) 来与 API 交互。

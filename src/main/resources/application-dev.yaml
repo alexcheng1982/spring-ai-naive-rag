@@ -3,10 +3,10 @@ spring:
     ollama:
       embedding:
         options:
-          model: "qwen:1.8b"
+          model: "qwen:0.5b"
       chat:
         options:
-          model: "qwen:1.8b"
+          model: "qwen:0.5b"
           temperature: 0.1
 redis:
   url: "redis://localhost:6379"
