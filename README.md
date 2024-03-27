@@ -7,6 +7,8 @@ Redis。参考 `docker-compose.yaml` 文件。
 
 默认使用通义千问 0.5b 模型（`qwen:0.5b`），可以通过配置文件来修改。
 
+> 朴素 RAG 的结果，依赖于文档相似性的查询结果。在本地运行时，受限于模型的参数数量，查询结果可能不太准确。
+
 使用 `dev` profile 来运行 Spring。
 
 访问 [Swagger UI](http://localhost:8080/swagger-ui/index.html) 来与 API 交互。
