@@ -31,7 +31,7 @@ Redis。参考 `docker-compose.yaml` 文件。
 
 ## 课程
 
-![课程](./course.png)
+[![课程](./course.png)](https://www.bilibili.com/cheese/play/ss15645)
 
 《AI 大模型检索增强生成【Spring AI
 实现】》课程已经上线，可以从 [B站](https://www.bilibili.com/cheese/play/ss15645)
