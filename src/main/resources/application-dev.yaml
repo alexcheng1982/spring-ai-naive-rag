@@ -1,0 +1,12 @@
+spring:
+  ai:
+    ollama:
+      embedding:
+        options:
+          model: "qwen:1.8b"
+      chat:
+        options:
+          model: "qwen:1.8b"
+          temperature: 0.1
+redis:
+  url: "redis://localhost:6379"

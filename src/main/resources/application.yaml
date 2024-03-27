@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: naive-rag
+  threads:
+    virtual:
+      enabled: true
+redis:
+  indexName: naive-rag
