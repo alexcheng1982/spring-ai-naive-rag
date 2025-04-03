@@ -1,5 +1,7 @@
 # Spring AI 实现朴素 RAG
 
+Naive RAG using Spring AI. Load content from web pages.
+
 ## 运行
 
 需要在本地安装 Docker Desktop。使用 Docker Desktop 来运行
