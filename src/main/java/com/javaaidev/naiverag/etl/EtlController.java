@@ -1,4 +1,4 @@
-package cc.vividcode.ai.naiverag.etl;
+package com.javaaidev.naiverag.etl;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

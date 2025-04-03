@@ -1,4 +1,4 @@
-package cc.vividcode.ai.naiverag.etl;
+package com.javaaidev.naiverag.etl;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

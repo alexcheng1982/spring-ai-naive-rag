@@ -1,4 +1,4 @@
-package cc.vividcode.ai.naiverag.etl;
+package com.javaaidev.naiverag.etl;
 
 public record WebPageLoadRequest(String url) {
 

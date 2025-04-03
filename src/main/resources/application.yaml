@@ -4,5 +4,19 @@ spring:
   threads:
     virtual:
       enabled: true
-redis:
-  indexName: naive-rag
+  ai:
+    ollama:
+      embedding:
+        options:
+          model: "bge-large"
+      chat:
+        options:
+          model: "qwen2.5:0.5b"
+          temperature: 0.1
+    vectorstore:
+      pgvector:
+        initializeSchema: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres

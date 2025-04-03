@@ -1,12 +1,10 @@
-package cc.vividcode.ai.naiverag.chat;
+package com.javaaidev.naiverag.chat;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/chat")
 public class ChatController {
 
   private final ChatService chatService;
@@ -15,8 +13,8 @@ public class ChatController {
     this.chatService = chatService;
   }
 
-  @PostMapping("/query")
-  public String chat(@RequestBody ChatRequest request) {
-    return chatService.chat(request);
+  @PostMapping("/chat")
+  public ChatResponse chat(@RequestBody ChatRequest request) {
+    return new ChatResponse(chatService.chat(request));
   }
 }

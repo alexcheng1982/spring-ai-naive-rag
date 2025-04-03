@@ -1,7 +1,7 @@
-package cc.vividcode.ai.naiverag;
+package com.javaaidev.naiverag;
 
-import cc.vividcode.ai.naiverag.chat.ChatModuleConfiguration;
-import cc.vividcode.ai.naiverag.etl.EtlModuleConfiguration;
+import com.javaaidev.naiverag.chat.ChatModuleConfiguration;
+import com.javaaidev.naiverag.etl.EtlModuleConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;

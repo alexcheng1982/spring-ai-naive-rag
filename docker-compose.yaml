@@ -1,11 +1,13 @@
-version: "3"
 services:
-  redis-stack:
-    image: redis/redis-stack
+  postgres:
+    image: pgvector/pgvector:0.8.0-pg16
     volumes:
-      - redis-data:/data
+      - postgresql-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
     ports:
-      - "6379:6379"
-      - "8001:8001"
+      - "5432:5432"
 volumes:
-  redis-data:
+    postgresql-data:

@@ -1,14 +1,15 @@
-package cc.vividcode.ai.naiverag.chat;
+package com.javaaidev.naiverag.chat;
 
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.springframework.ai.chat.ChatClient;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
+import org.springframework.util.CollectionUtils;
 
 public class ChatService {
 
@@ -24,20 +25,23 @@ public class ChatService {
   }
 
   public String chat(ChatRequest request) {
-    var documents = findDocuments(request.message());
+    var documents = findDocuments(request.input());
     var prompt = new PromptTemplate(promptRag).create(
-        Map.of("query", request.message(),
+        Map.of("query", request.input(),
             "documents", documents)
     );
-    return chatClient.call(prompt).getResult().getOutput().getContent();
+    return chatClient.prompt(prompt).call().content();
   }
 
   private String findDocuments(String query) {
     var docs = vectorStore.similaritySearch(
-        SearchRequest.query(query)
-            .withSimilarityThresholdAll()
-            .withTopK(3));
-    return docs.stream().map(Document::getContent)
+        SearchRequest.builder().query(query)
+            .similarityThresholdAll()
+            .topK(3).build());
+    if (CollectionUtils.isEmpty(docs)) {
+      return "";
+    }
+    return docs.stream().map(Document::getText)
         .collect(Collectors.joining("\r\n\r\n"));
   }
 }
