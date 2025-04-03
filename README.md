@@ -33,6 +33,8 @@ Pgvector。参考 `docker-compose.yaml` 文件。
 
 通过用户界面进行交互，访问 http://localhost:8080/webjars/chat-agent-ui/index.html
 
+![用户界面](./spring-ai-naive-rag-ui.png)
+
 ## 课程
 
 [![课程](./course.png)](https://www.bilibili.com/cheese/play/ss15645)
