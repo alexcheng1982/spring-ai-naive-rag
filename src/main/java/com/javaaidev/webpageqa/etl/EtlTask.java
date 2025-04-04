@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.etl;
+package com.javaaidev.webpageqa.etl;
 
 import java.util.List;
 import org.slf4j.Logger;

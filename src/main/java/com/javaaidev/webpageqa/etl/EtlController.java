@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.etl;
+package com.javaaidev.webpageqa.etl;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.etl;
+package com.javaaidev.webpageqa.etl;
 
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.splitter.DocumentSplitters;

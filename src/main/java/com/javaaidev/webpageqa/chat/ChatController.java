@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.chat;
+package com.javaaidev.webpageqa.chat;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

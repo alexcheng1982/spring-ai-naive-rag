@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.chat;
+package com.javaaidev.webpageqa.chat;
 
 import java.util.Map;
 import java.util.stream.Collectors;

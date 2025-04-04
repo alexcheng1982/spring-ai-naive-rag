@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.etl;
+package com.javaaidev.webpageqa.etl;
 
 import java.net.Socket;
 import java.security.SecureRandom;

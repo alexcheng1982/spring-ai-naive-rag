@@ -1,7 +1,7 @@
-package com.javaaidev.naiverag;
+package com.javaaidev.webpageqa;
 
-import com.javaaidev.naiverag.chat.ChatModuleConfiguration;
-import com.javaaidev.naiverag.etl.EtlModuleConfiguration;
+import com.javaaidev.webpageqa.chat.ChatModuleConfiguration;
+import com.javaaidev.webpageqa.etl.EtlModuleConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;

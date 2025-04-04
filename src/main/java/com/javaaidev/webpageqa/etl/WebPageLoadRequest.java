@@ -1,4 +1,4 @@
-package com.javaaidev.naiverag.etl;
+package com.javaaidev.webpageqa.etl;
 
 public record WebPageLoadRequest(String url) {
 
